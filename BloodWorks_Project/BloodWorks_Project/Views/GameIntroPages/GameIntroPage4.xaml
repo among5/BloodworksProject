@@ -4,12 +4,19 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="BloodWorks_Project.Views.GameIntroPage3">
+             x:Class="BloodWorks_Project.Views.GameIntroPage4">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+
+            <Image x:Name="image" Source = "IntroPage4.PNG" HorizontalOptions="FillAndExpand" />
+
+            <Label Text="Game about screen....Tap to continue"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

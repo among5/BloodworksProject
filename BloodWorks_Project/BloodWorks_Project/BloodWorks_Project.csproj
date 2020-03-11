@@ -20,10 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Views\GameIntroPage3.xaml.cs">
+    <Compile Update="Views\GameIntroPages\GameIntroPage3.xaml.cs">
       <DependentUpon>GameIntroPage3.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\GameInfoPage2.xaml.cs">
+    <Compile Update="Views\GameInfoPages\GameInfoPage2.xaml.cs">
       <DependentUpon>GameInfoPage2.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\TheBloodGame.xaml.cs">
@@ -32,13 +32,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\GameInfoPage1.xaml">
+    <EmbeddedResource Update="Views\GameInfoPages\GameInfoPage1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\GameIntroPage3.xaml">
+    <EmbeddedResource Update="Views\GameIntroPages\GameIntroPage1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\GameInfoPage2.xaml">
+    <EmbeddedResource Update="Views\GameIntroPages\GameIntroPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\GameIntroPages\GameIntroPage3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\GameInfoPages\GameInfoPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\GameIntroPages\GameIntroPage4.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\TheBloodGame.xaml">

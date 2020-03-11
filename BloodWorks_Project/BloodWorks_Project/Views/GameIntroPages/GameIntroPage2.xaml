@@ -4,23 +4,19 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="BloodWorks_Project.Views.GameInfoPage2">
+             x:Class="BloodWorks_Project.Views.GameIntroPage2">
     <ContentPage.Content>
         <StackLayout>
 
-
+            <Image x:Name="image" Source = "IntroPage2.PNG" HorizontalOptions="FillAndExpand" />
 
             <Label Text="Game about screen....Tap to continue"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
 
-            <StackLayout.GestureRecognizers>
-                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="OnScreenSelected"></TapGestureRecognizer>
+          
 
-            </StackLayout.GestureRecognizers>
-            
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -33,7 +33,7 @@ namespace BloodWorks_Project.Views
         async void OnScreenSelected(object sender, EventArgs args)
         {
             var layout = (BindableObject)sender;
-            await Navigation.PushAsync(new GameIntroPage3(new GameIntroPage3ViewModel()));
+            await Navigation.PushAsync(new GameIntroPage1(new GameIntroPage1ViewModel()));
         }
 
         protected override void OnAppearing()

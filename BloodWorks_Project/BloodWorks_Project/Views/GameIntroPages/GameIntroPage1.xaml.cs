@@ -11,18 +11,19 @@ using System.ComponentModel;
 namespace BloodWorks_Project.Views
 {
     [DesignTimeVisible(false)]
-    public partial class TheBloodGame : ContentPage
-    {
-        TheBloodGameViewModel viewModel;
 
-        public TheBloodGame(TheBloodGameViewModel viewModel)
+    public partial class GameIntroPage1 : ContentPage
+    {
+        GameIntroPage1ViewModel viewModel;
+
+        public GameIntroPage1(GameIntroPage1ViewModel viewModel)
         {
             InitializeComponent();
 
             BindingContext = this.viewModel = viewModel;
         }
 
-        public TheBloodGame()
+        public GameIntroPage1()
         {
             InitializeComponent();
         }
@@ -31,7 +32,8 @@ namespace BloodWorks_Project.Views
         {
             base.OnAppearing();
             await Task.Delay(3000);
-            await Navigation.PushAsync(new GameInfoPage1(new GameInfoPage1ViewModel()));
+
+            await Navigation.PushAsync(new GameIntroPage2(new GameIntroPage2ViewModel()));
         }
 
     }

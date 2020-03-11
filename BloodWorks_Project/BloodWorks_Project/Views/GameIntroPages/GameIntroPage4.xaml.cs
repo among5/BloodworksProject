@@ -11,20 +11,19 @@ using System.ComponentModel;
 namespace BloodWorks_Project.Views
 {
     [DesignTimeVisible(false)]
-    [XamlCompilation(XamlCompilationOptions.Compile)]
 
-    public partial class GameInfoPage1 : ContentPage
+    public partial class GameIntroPage4 : ContentPage
     {
-        GameInfoPage1ViewModel viewModel;
+        GameIntroPage4ViewModel viewModel;
 
-        public GameInfoPage1(GameInfoPage1ViewModel viewModel)
+        public GameIntroPage4(GameIntroPage4ViewModel viewModel)
         {
             InitializeComponent();
 
             BindingContext = this.viewModel = viewModel;
         }
 
-        public GameInfoPage1()
+        public GameIntroPage4()
         {
             InitializeComponent();
         }
@@ -32,8 +31,9 @@ namespace BloodWorks_Project.Views
         protected async override void OnAppearing()
         {
             base.OnAppearing();
-            await Task.Delay(5000);
-            await Navigation.PushAsync(new GameInfoPage2(new GameInfoPage2ViewModel()));
+            //await Task.Delay(3000);
+
+            //await Navigation.PushAsync(new GameIntroPage2(new GameIntroPage2ViewModel()));
         }
 
     }
